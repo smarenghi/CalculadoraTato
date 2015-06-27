@@ -1,68 +1,185 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
 
     <meta charset="utf-8">
-    <meta name="author" content="Licenciatura en Ingeniería Audiovisual - Cine Digital - 2014">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Licenciatura en Ingeniería Audiovisual - Cine Digital - 2015">
 
-    <title>Calculadora Cinéfila</title>
-    
+    <title>La calculadora de Tato</title>
+
     <!-- Favicon -->
-    <!-- <link rel="shortcut icon" href="img/logos_ico/logo_rosado.ico"> -->
+    <link rel="shortcut icon" href="img/profile.ico">
     
-    <!-- Bootstrap Core CSS -->
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-    
-    <!-- Custom CSS -->
-    <link href="css/graph.css" rel="stylesheet">
     <script src="js/main.js"></script>
+
+    <!-- Principio PAU -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+<!-- Final PAU -->
     
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <!-- <link href='http://fonts.googleapis.com/css?family=Roboto:900,300,400' rel='stylesheet' type='text/css'> -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <!-- <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"> -->
+
 
 </head>
-    
-<body>
-    <h1>Dimensiones de una sala de cine</h1>
-    <form id="datos">
-        Largo de la sala = <input type="text" name="xSala" id="xSala" value="20" > <br>
-        Alto de la sala = <input type="text" name="ySala" id="ySala" value="5" > <br>
-        Ancho de la sala = <input type="text" name="zSala" id="zSala" value="5" > <br>
-        Profundidad de filas = <input type="text" name="xAsiento" id="xAsiento" value="0.85" > <br>
-        Ancho del Asiento = <input type="text" name="zAsiento" id="zAsiento" value="0.85" > <br>
-        Largo de la pantalla = <input type="text" name="largoPantalla" id="largoPantalla" value="4"> <br> 
-        Ancho de la pantalla = <input type="text" name="anchoPantalla" id="anchoPantalla" value="2.25" > <br> 
-        Distancia de la pantalla al piso = <input type="text" name="distanciaPantallaPiso" id="distanciaPantallaPiso" value="2" > <br> 
-    </form>
-    
-    <input type="submit" value="Submit" onclick="isoptica()">
+
+<body id="page-top" class="index">
 
     
-    <h2>Distancia de los asientos a la pantalla</h2>
-    <p id = "xEscalon"></p>
-    <h2>Cantidad de filas</h2>
-    <p id = "cantidadFilas"></p>
-    <h2>Asientos por fila</h2>
-    <p id= "asientosPorFila"></p>
-    <h2>Capacidad máxima</h2>
-    <p id= "totalAsientos"></p>
-    <h2>CURVA ISOPTICA</h2>
-    <canvas id="canvasiso" style="border:1px solid #000000;"></canvas>
-    <h2>DIBUJO DE PLANTA</h2>
-    <canvas id="canvascenital" style="border:1px solid #000000;"></canvas>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">La calculadora de Tato</span>
+                        <hr class="star-light">
+                        <span class="skills">Esta es una calculadora para distribuir los asientos en tu sala de cine.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
     
-    <!-- jQuery Version 1.11.0 -->
-    <!-- <script src="js/jquery-1.11.0.js"></script> -->
+    <!-- Sección Calcular -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Ingresa los datos de tu sala</h2>
+                    <hr class="star-primary">
+                </div>
+                
+            <!-- INICIO FORMULARIO PAU -->
+                <div class="main">
+                    <div class="login-form">
+                        <form id="datos">
+                            <input type="text" class="text" name="xSala" id="xSala" value="Largo de la sala" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Largo de la sala';}" >
+                            <input type="text" class="text" name="ySala" id="ySala" value="Alto de la sala" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Alto de la sala';}" >
+                            <input type="text" class="text" name="zSala" id="zSala" value="Ancho de la sala" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Ancho de la sala';}" >
+                            <input type="text" class="text" name="xAsiento" id="xAsiento" value="Profundidad de filas" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Profundidad de filas';}" >
+                            <input type="text" class="text" name="zAsiento" id="zAsiento" value="Ancho del Asiento" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Ancho del Asiento';}" >
+                            <input type="text" class="text" name="largoPantalla" id="largoPantalla" value="Largo de la pantalla" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Largo de la pantalla';}" >
+                            <input type="text" class="text" name="anchoPantalla" id="anchoPantalla" value="Ancho de la pantalla" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Ancho de la pantalla';}" >
+                            <input type="text" class="text" name="distanciaPantallaPiso" id="distanciaPantallaPiso" value="Distancia de la pantalla al piso" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Distancia de la pantalla al piso';}" > 
+                        </form>
+
+                        <div class="submit">
+                            <input type="submit" onclick="isoptica()" value="Calcular" >	
+                        </div>
+
+                    </div>
+                    <div>
+                        <h2>Resultados</h2>
+                        <p id = "xEscalon"></p>
+                        <h2>Cantidad de filas</h2>
+                        <p id = "cantidadFilas"></p>
+                        <h2>Asientos por fila</h2>
+                        <p id= "asientosPorFila"></p>
+                        <h2>Capacidad máxima</h2>
+                        <p id= "totalAsientos"></p>
+                        <h2>CURVA ISOPTICA</h2>
+                        <canvas id="canvasiso" style="border:1px solid #000000;"></canvas>
+                        <h2>DIBUJO DE PLANTA</h2>
+                        <canvas id="canvascenital" style="border:1px solid #000000;"></canvas>
+                    </div>
+
+                </div>
+            <!-- FIN FORMULARIO PAU -->
+                    
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Seccion About -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Descripción</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Esta aplicación es una versión beta de una calculadora que sirve para determinar la distribución de los asientos que debe tener una sala de cine. Luego de ingresar los datos necesarios, podrás ver graficamente como sería la sala. CONSIDERACIONES: La medida de profundidad de los asientos debe incluir el espacio en el que circulan las personas.Todas las medidas deben estar en metros.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Este proyecto fue hecho por estudiantes de la Lic. en Ingeniería Audiovisual, para la asignatura Cine Digital, 2015. Gran parte del trabajo se basó en el Trabajo Final de Grado de Raul Arribas Pérez y María José García Lobato. Su proyecto está orientado al diseño y acondicionamiento de una sala de cine siguiendo las normas establecidas por el SMPTE.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Sección Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="footer-col col-md-12">
+                        <h3 class="footer">Universidad Católica del Uruguay</h3>
+                        <p class="footer">Cine Digital<br>Junio de 2015</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Calculadora Cinéfila 2015
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     
-    <!-- Custom JavaScript -->
-<!--    <script src="js/main.js"></script>-->
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
 </body>
 
 </html>
