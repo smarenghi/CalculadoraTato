@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Licenciatura en Ingeniería Audiovisual - Cine Digital - 2014">
+
+    <title>Calculadora Cinéfila</title>
+    
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="img/logos_ico/logo_rosado.ico"> -->
+    
+    <!-- Bootstrap Core CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    
+    <!-- Custom CSS -->
+    <link href="css/graph.css" rel="stylesheet">
+    <script src="js/main.js"></script>
+    
+
+    <!-- Custom Fonts -->
+    <!-- <link href='http://fonts.googleapis.com/css?family=Roboto:900,300,400' rel='stylesheet' type='text/css'> -->
+
+</head>
+    
+<body>
+    <h1>Dimensiones de una sala de cine</h1>
+    <form id="datos">
+        Largo de la sala = <input type="text" name="xSala" id="xSala" value="20" > <br>
+        Alto de la sala = <input type="text" name="ySala" id="ySala" value="5" > <br>
+        Ancho de la sala = <input type="text" name="zSala" id="zSala" value="5" > <br>
+        Profundidad de filas = <input type="text" name="xAsiento" id="xAsiento" value="0.85" > <br>
+        Ancho del Asiento = <input type="text" name="zAsiento" id="zAsiento" value="0.85" > <br>
+        Largo de la pantalla = <input type="text" name="largoPantalla" id="largoPantalla" value="4"> <br> 
+        Ancho de la pantalla = <input type="text" name="anchoPantalla" id="anchoPantalla" value="2.25" > <br> 
+        Distancia de la pantalla al piso = <input type="text" name="distanciaPantallaPiso" id="distanciaPantallaPiso" value="2" > <br> 
+    </form>
+    
+    <input type="submit" value="Submit" onclick="isoptica()">
+
+    
+    <h2>Distancia de los asientos a la pantalla</h2>
+    <p id = "xEscalon"></p>
+    <h2>Cantidad de filas</h2>
+    <p id = "cantidadFilas"></p>
+    <h2>Asientos por fila</h2>
+    <p id= "asientosPorFila"></p>
+    <h2>Capacidad máxima</h2>
+    <p id= "totalAsientos"></p>
+    <h2>CURVA ISOPTICA</h2>
+    <canvas id="canvasiso" style="border:1px solid #000000;"></canvas>
+    <h2>DIBUJO DE PLANTA</h2>
+    <canvas id="canvascenital" style="border:1px solid #000000;"></canvas>
+    
+    <!-- jQuery Version 1.11.0 -->
+    <!-- <script src="js/jquery-1.11.0.js"></script> -->
+
+    <!-- Bootstrap Core JavaScript -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+
+    <!-- Plugin JavaScript -->
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> -->
+    
+    <!-- Custom JavaScript -->
+<!--    <script src="js/main.js"></script>-->
+</body>
+
+</html>
