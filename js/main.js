@@ -175,8 +175,8 @@ function isoptica(){
         var th2 = document.createElement("TH");
         var tit1 = document.createElement("TD");
         var tit2 = document.createElement("TD");
-        tit1.appendChild(document.createTextNode("Dist. asientos-pantalla"));
-        tit2.appendChild(document.createTextNode("Altura escalones"));  
+        tit1.appendChild(document.createTextNode("Dist. asientos-pantalla  "));
+        tit2.appendChild(document.createTextNode("  Altura escalones"));  
         
         th.appendChild(tit1);
         th2.appendChild(tit2);
