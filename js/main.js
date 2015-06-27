@@ -215,7 +215,7 @@ function isoptica(){
 	//se obtiene el elemento canvas del html, cenital
 	var canvascenital = document.getElementById("canvascenital");
 
-	var canvasWidth = window.innerWidth *0.60; // Austar dibujos al ancho de la pantalla, con un pequeño margen.
+	var canvasWidth = window.innerWidth *0.83; // Austar dibujos al ancho de la pantalla, con un pequeño margen.
 	var escala = (canvasWidth*0.95) / xSala;
 	var canvasIsoHeight = ySala * escala;
 	var canvasCenitalHeight = zSala * escala;
@@ -231,7 +231,7 @@ function isoptica(){
 	var ctxiso = canvasiso.getContext("2d");
 
 	//dibujan contorno y fondo de la sala de cine
-	ctxiso.fillStyle = "rgba(24, 188, 156, 0.35)";
+	ctxiso.fillStyle = "rgba(255, 255, 255, 0.77)";
 	ctxiso.strokeStyle = 'black';
 	ctxiso.fillRect(0,0,canvasWidth,canvasIsoHeight);
 	ctxiso.strokeRect(0,0,canvasWidth,canvasIsoHeight);
@@ -269,7 +269,7 @@ function isoptica(){
 	var ctxcenital = canvascenital.getContext("2d");
 
 	//dibujan contorno y fondo de la sala de cine
-	ctxcenital.fillStyle = "rgba(24, 188, 156, 0.35)";
+	ctxcenital.fillStyle = "rgba(255, 255, 255, 0.77)";
 	ctxcenital.strokeStyle = 'black';
 	ctxcenital.fillRect(0,0,canvasWidth,canvasCenitalHeight);
 	ctxcenital.strokeRect(0,0,canvasWidth,canvasCenitalHeight);

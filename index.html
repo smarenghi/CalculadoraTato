@@ -47,8 +47,18 @@
                     <img class="img-responsive" src="img/profile.png" alt="">
                     <div class="intro-text">
                         <span class="name">La calculadora de Tato</span>
-                        <hr class="star-light">
+                        
                         <span class="skills">Esta es una calculadora para distribuir los asientos en tu sala de cine.</span>
+                        <hr class="star-light">
+                        
+                         <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Esta aplicación es una versión beta de una calculadora que sirve para determinar la distribución de los asientos que debe tener una sala de cine. Luego de ingresar los datos necesarios, podrás ver graficamente como sería la sala. CONSIDERACIONES: La medida de profundidad de los asientos debe incluir el espacio en el que circulan las personas.Todas las medidas deben estar en metros.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Este proyecto fue hecho por estudiantes de la Lic. en Ingeniería Audiovisual, para la asignatura Cine Digital, 2015. Gran parte del trabajo se basó en el Trabajo Final de Grado de Raul Arribas Pérez y María José García Lobato. Su proyecto está orientado al diseño y acondicionamiento de una sala de cine siguiendo las normas establecidas por el SMPTE.</p>
+                </div>
+            </div>     
                     </div>
                 </div>
             </div>
@@ -84,6 +94,7 @@
                         </div>
 
                     </div>
+<!--
                     <div>
                         <h2>Resultados</h2>
                         <p id = "xEscalon"></p>
@@ -98,6 +109,7 @@
                         <h2>DIBUJO DE PLANTA</h2>
                         <canvas id="canvascenital" style="border:1px solid #000000;"></canvas>
                     </div>
+-->
 
                 </div>
             <!-- FIN FORMULARIO PAU -->
@@ -110,6 +122,7 @@
     <!-- Seccion About -->
     <section class="success" id="about">
         <div class="container">
+<!--
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Descripción</h2>
@@ -124,6 +137,33 @@
                     <p>Este proyecto fue hecho por estudiantes de la Lic. en Ingeniería Audiovisual, para la asignatura Cine Digital, 2015. Gran parte del trabajo se basó en el Trabajo Final de Grado de Raul Arribas Pérez y María José García Lobato. Su proyecto está orientado al diseño y acondicionamiento de una sala de cine siguiendo las normas establecidas por el SMPTE.</p>
                 </div>
             </div>
+-->
+            <div class="container">
+                
+
+                
+                        <div class="col-lg-12 text-center">
+                            <h2>Resultados</h2>
+                            <hr class="star-light">
+                            <p id = "xEscalon" class="col-lg-offset-4"></p>
+                        </div>
+                    
+                        
+                   
+                <div class="text-center"> 
+                        <h4>Cantidad de filas</h4>
+                        <p id = "cantidadFilas"></p>
+                        <h4>Asientos por fila</h4>
+                        <p id= "asientosPorFila"></p>
+                        <h4>Capacidad máxima</h4>
+                        <p id= "totalAsientos"></p>
+                        <h4>CURVA ISOPTICA</h4>
+                        <canvas id="canvasiso" style="border:1px solid #000000;"></canvas>
+                        <h4>DIBUJO DE PLANTA</h4>
+                        <canvas id="canvascenital" style="border:1px solid #000000;"></canvas>
+                    
+            
+                </div>
         </div>
     </section>
 
