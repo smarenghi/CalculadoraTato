@@ -1,7 +1,7 @@
 
 <b> La calculadora de Tato V0.1. </b>
 
-Esta página es una versión Beta de una calculadora que sirve para determinar la distribución de los asientos que debe tener una sala de cine. Luego de ingresar los datos necesarios, podrás ver graficamente como sería la sala. 
+Esta aplicación es una versión beta de una calculadora que sirve para determinar la distribución de los asientos que debe tener una sala de cine. Luego de ingresar los datos necesarios, podrás ver graficamente como sería la sala. 
 
 <b> ONSIDERACIONES: </b>
 La medida de profundda de los asientos debe incluir el espacio en el que circulan las personas; todas las medidas deben estar en metros.
