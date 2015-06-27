@@ -1,8 +1,11 @@
 
 <b> La calculadora de Tato V0.1. </b>
 
-Esta calculadora, sirve para medir la isoptica de una sala de cine.
+Esta aplicacion web sirve para calcular la isoptica de una sala de cine.
+Se ingresan los datos y devuelve los resultados.
 
-Se ingresan los datos y . calculando asi sabemos jaflkajfkl
+A su vez dibuja la planta y la curva.
 
-flksajflkajfl
+Desarollado por estudiantes de la Lic. en Ingenieria Audiovisual de la Universidad Católica del Uruguay
+
+
