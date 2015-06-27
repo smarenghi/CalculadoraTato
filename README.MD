@@ -3,6 +3,6 @@
 
 Esta calculadora, sirve para medir la isoptica de una sala de cine.
 
-Se ingresan los datos y calcula.
+Se ingresan los datos y . calculando asi sabemos jaflkajfkl
 
 flksajflkajfl
